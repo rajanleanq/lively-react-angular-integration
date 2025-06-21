@@ -2,6 +2,7 @@
 
 ### Standalone React Development
 ```bash
+cd lively-react
 npm install
 npm run dev
 ```
