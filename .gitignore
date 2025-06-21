@@ -1,0 +1,29 @@
+# for angular
+lively-angular/dist
+# for react
+# Logs
+lively-react/logs
+lively-react/*.log
+lively-react/npm-debug.log*
+lively-react/yarn-debug.log*
+lively-react/yarn-error.log*
+lively-react/pnpm-debug.log*
+lively-react/lerna-debug.log*
+
+lively-react/node_modules
+lively-react/dist
+lively-react/dist-ssr
+lively-react/*.local
+
+# Editor directories and files
+lively-react/.vscode/*
+lively-react/!.vscode/extensions.json
+lively-react/.idea
+lively-react/.DS_Store
+lively-react/*.suo
+lively-react/*.ntvs*
+lively-react/*.njsproj
+lively-react/*.sln
+lively-react/*.sw?
+lively-react/.env
+lively-react/copy-angular-output/

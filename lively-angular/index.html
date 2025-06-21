@@ -1,0 +1,32 @@
+<!-- angular-host/index.html -->
+<!DOCTYPE html>
+<html lang="en" ng-app="legacyApp">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AngularJS Host with React Component</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body ng-controller="MainController as main">
+    <h1>Legacy AngularJS Application</h1>
+
+    <button ng-click="main.login()" ng-if="!main.isLoggedIn">Login</button>
+    <button ng-click="main.logout()" ng-if="main.isLoggedIn">Logout</button>
+    <hr />
+
+    <div ng-if="main.isLoggedIn">
+      <h2>React Dashboard Area (mounted below)</h2>
+
+      <lunch-dashboard> </lunch-dashboard>
+    </div>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="./dist/lunch-dashboard.umd.cjs"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
